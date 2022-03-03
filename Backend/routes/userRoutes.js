@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
+// const jwt = require("jsonwebtoken");
 const Joi = require("@hapi/joi");
 require("dotenv").config();
 const secret = process.env.secret;
