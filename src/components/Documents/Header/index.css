@@ -1,0 +1,24 @@
+.logo-image {
+  height: 50px;
+  width: 150px;
+}
+
+.icon {
+  height: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.horizontal-line {
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+}

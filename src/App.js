@@ -1,15 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import Documents from "./components/Documents";
 
 function App() {
-  return (
-    <div className="App">
-      <Register />
-      <Login />
-    </div>
-  );
+  return <Documents />;
 }
 
 export default App;

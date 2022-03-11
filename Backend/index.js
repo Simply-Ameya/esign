@@ -6,11 +6,19 @@ const { urlencoded } = require("express");
 const bodyparser = require("body-parser");
 
 const userRoute = require("./routes/userRoutes");
-//package
+const documentRoute = require("./routes/documentRoute");
+const signRoute = require("./routes/signRoute");
+
 const app = express();
 
-app.use(bodyparser.urlencoded({ extended: true }));
-app.use(bodyparser.json());
+app.use(
+  bodyparser.urlencoded({
+    limit: "50mb",
+    extended: true,
+    parameterLimit: 50000,
+  })
+);
+app.use(bodyparser.json({ limit: "50mb" }));
 app.use(cors());
 
 // app.use((req, res, next) => {
@@ -40,6 +48,8 @@ mongoose
   });
 
 app.use("/user", userRoute);
+app.use("/document", documentRoute);
+app.use("/sign", signRoute);
 
 app.listen(PORT, () => {
   console.log("server running on port : ", PORT);

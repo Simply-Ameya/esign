@@ -1,0 +1,15 @@
+.main-container {
+  width: 200px;
+}
+
+.options {
+  height: 30px;
+  font-size: 25px;
+  color: #2e5438;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.template-option {
+  color: grey;
+}

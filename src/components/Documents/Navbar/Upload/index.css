@@ -1,0 +1,36 @@
+.upload-popup {
+  width: 500px;
+}
+
+.popup-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.pop-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cancel-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.next-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.file--input {
+  border-style: none;
+  border-width: 0px;
+  width: 300px;
+}
+
+.title-input {
+  width: 300px;
+}
